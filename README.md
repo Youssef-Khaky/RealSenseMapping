@@ -15,6 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 The following packages are required for the project:
 * [Realsense SDK 2.0](https://github.com/IntelRealSense/librealsense) - Used to interface with the cameras
 * [OpenCV 3.0](https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html)
+* [OpenCV Installation](https://github.com/jayrambhia/Install-OpenCV)
 * [CUDA](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html) - Used to run C code on NVIDIA GPUs
 * [GNUPlot](http://www.gnuplot.info/) - Used to display pointcloud data
 * [GNUPlot IO stream](https://github.com/dstahlke/gnuplot-iostream) - Used to interface GNUPlot with C++
