@@ -27,37 +27,37 @@ The following packages are required for the project:
 
 ```
 # Change to working directory
-$ cd project-dir
+cd project-dir
 
 # Clone the repository
-$ git clone https://github.com/AkshayThiru/Mapping
+git clone https://github.com/AkshayThiru/Mapping
 ```
 
 2. Change to source directory and compile the code.
 
 ```
 # Change to source directory
-$ cd project-dir/src
+cd project-dir/src
 
 # Compile the CPU version of the code
-$ g++ -std=c++11 CPU_main.cpp -o CPU_main -lrealsense2 -lboost_iostreams -lboost_system -lboost_filesystem `pkg-config opencv --cflags --libs` -lpthread
+g++ -std=c++11 CPU_main.cpp -o CPU_main -lrealsense2 -lboost_iostreams -lboost_system -lboost_filesystem `pkg-config opencv --cflags --libs` -lpthread
 ```
 
 3. Compile the GPU version of the code if applicable. CUDA version > 8.0 is required, and NVIDIA GPU should have compute capability > 2.0
 
 ```
 # Compile the GPU version of the code
-$ nvcc -std=c++11 GPU_main.cu -o GPU_main -lrealsense2 -lboost_iostreams -lboost_system -lboost_filesystem `pkg-config opencv --cflags --libs` -lpthread -Wno-deprecated-gpu-targets
+nvcc -std=c++11 GPU_main.cu -o GPU_main -lrealsense2 -lboost_iostreams -lboost_system -lboost_filesystem `pkg-config opencv --cflags --libs` -lpthread -Wno-deprecated-gpu-targets
 ```
 
 4. Connect both the cameras and run the code.
 
 ```
 # Run the CPU code
-$ ./CPU_main
+./CPU_main
 
 # Or run the GPU code
-$ ./GPU_main
+./GPU_main
 ```
 
 ## Authors
