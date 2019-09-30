@@ -29,10 +29,14 @@ int main(int argc, char const *argv[])
     /* Camera Initialization */
     Camera C;
     Bool_Init bC = C.Init();
-    if (bC.t265 && bC.d435)
-        std::cout << "Cameras initialized\n";
+    if (bC.t265)
+        std::cout << "T initialized\n";
     else 
-        std::cout << "Atleast one camera is not connected\n";
+        std::cout << "T not connected\n";
+    if (bC.d435)
+        std::cout << "D initialized\n";
+    else 
+        std::cout << "D not connected\n";
 
     /* Logger Initialization */
     Logger L;

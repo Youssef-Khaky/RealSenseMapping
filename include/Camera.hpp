@@ -164,7 +164,8 @@ public:
 	            d_idx = num_dev;
 	            b.d435 = true;
 	        }
-	        else if (strcmp(dev.get_info(RS2_CAMERA_INFO_SERIAL_NUMBER), &TRACK_SNO[0]) == 0) {
+	        // else if (strcmp(dev.get_info(RS2_CAMERA_INFO_SERIAL_NUMBER), &TRACK_SNO[0]) == 0) {
+	        else if (true) {
 	        	cfg.enable_stream(RS2_STREAM_POSE, RS2_FORMAT_6DOF);
 	        	std::cout << "Tracking Camera initialized: 6DoF\n";
 

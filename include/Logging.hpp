@@ -39,7 +39,7 @@ static const bool plot_3d = true; // displays 3-D view of depth feed from D435
 ///@}
 
 //! The path where the log files will be stored.
-static const std::string LOG_PATH = "/home/Akshay/Desktop/Test/Mapping/Logs/"; // path for logging
+static const std::string LOG_PATH = "/home/yk/RealSenseMapping/Logs/"; // path for logging
 
 
 
